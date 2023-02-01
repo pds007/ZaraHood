@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ZaraHood</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="enter_user_name">enter user name</string>
+    <string name="enter_password">enter password</string>
+    <string name="login_btn_txt">Login</string>
+    <string name="product_tab_toolbar_title">DashBoard</string>
+    <string name="price_tv">Inr %1$s</string>
+    <string name="profile_name_tv">Name: %1$s</string>
+    <string name="profile_dob_tv">DOB: %1$s</string>
+    <string name="profile_points_tv">Points Earned: %1$s Points</string>
+    <string name="item_click">Click here to join us for more rewards</string>
+    <string name="item_click_toast_msg">Thank you for joining our reward program</string>
+    <string name="profile_title">Profile</string>
+    <string name="forgot_pass">Forgot password?</string>
+    <string name="pass_empty">username or password cannot be empty</string>
+    <string name="login_failed_msg">Login Failed Please Retry</string>
+    <string name="toolbar_product_list">product list</string>
+    <string name="login_tv_title">Login</string>
+    <string name="retry">Retry</string>
+</resources>
