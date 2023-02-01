@@ -19,9 +19,10 @@ class ProductsRepo(
         products.emit(value = State.publishLoading(isLoading = true))
         try {
             val response = remote.getProducts()
-                .map(::Product)
-
-            products.emit(State.publishData(data = response))
+                val productsSortedOrderList = response.sortedBy {
+                    it.name
+                }.map(::Product)
+            products.emit(State.publishData(data = productsSortedOrderList))
         } catch (
             ex: Throwable
         ) {
