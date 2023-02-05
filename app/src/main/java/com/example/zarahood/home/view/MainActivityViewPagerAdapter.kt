@@ -68,7 +68,7 @@ class MainActivityViewPagerAdapter(
         position: Int = TAB_POSITION_PRODUCTS
     ) = when(position) {
         TAB_POSITION_PRODUCTS -> {
-            R.string.toolbar_product_list
+            R.string.product_tab_toolbar_title
         }
         TAB_POSITION_PROFILE -> {
             R.string.profile_title

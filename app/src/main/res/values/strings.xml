@@ -23,7 +23,6 @@
     <string name="forgot_pass">Forgot password?</string>
     <string name="pass_empty">username or password cannot be empty</string>
     <string name="login_failed_msg">Login Failed Please Retry</string>
-    <string name="toolbar_product_list">product list</string>
     <string name="login_tv_title">Login</string>
     <string name="retry">Retry</string>
 </resources>

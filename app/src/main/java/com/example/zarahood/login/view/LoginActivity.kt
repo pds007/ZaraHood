@@ -88,7 +88,7 @@ class LoginActivity : AppCompatActivity() {
                     getString(R.string.pass_empty),
                     Toast.LENGTH_SHORT
                 ).show()
-                //return@setOnClickListener
+                return@setOnClickListener
             }
             viewModel.userLoginRequest(userName = username, pass = password)
         }
