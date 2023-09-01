@@ -3,6 +3,7 @@ package com.example.zarahood.home.view
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
+import com.example.zarahood.R
 import com.example.zarahood.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         get() {
             return (binding.viewPager.adapter as? MainActivityViewPagerAdapter)
                 ?: throw NullPointerException(
-                    "viewPager adapter not set"
+                    getString(R.string.viewpager_adapter_not_found_error_text)
                 )
         }
 
@@ -65,4 +66,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    companion object {
+        const val TAG = "MainActivity"
+    }
 }

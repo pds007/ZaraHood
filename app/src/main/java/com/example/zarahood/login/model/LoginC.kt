@@ -9,6 +9,8 @@ interface LoginC {
         val navState: Flow<State<LoginNavigation>>
 
        suspend fun userLoginRequest( userName:String, pass:String)
+
+       fun forgotPasswordClicked()
    }
 
 }

@@ -3,7 +3,7 @@ package com.example.zarahood.home.product.model
 import android.util.Log
 import com.example.zarahood.home.product.uimodels.Product
 import com.example.zarahood.utils.processingStates.State
-import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.MutableStateFlow
 
 class ProductsRepo(
     private val remote: ProductsC.Remote,
@@ -13,7 +13,9 @@ class ProductsRepo(
         private const val TAG = "ProductsRepo"
     }
 
-    override val products: MutableSharedFlow<State<List<Product>>> = MutableSharedFlow()
+    override val products: MutableStateFlow<State<List<Product>>> = MutableStateFlow(
+        State.publishLoading(isLoading = false)
+    )
 
     override suspend fun getProducts() {
         products.emit(value = State.publishLoading(isLoading = true))

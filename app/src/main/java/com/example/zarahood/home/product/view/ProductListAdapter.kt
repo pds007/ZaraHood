@@ -38,7 +38,7 @@ class ProductListAdapter :
     ) : RecyclerView.ViewHolder(
         itemBinding.root
     ) {
-        var isExpanded: Boolean = false
+        private var isExpanded: Boolean = false
 
         init {
             itemBinding.productsCard.setOnClickListener {

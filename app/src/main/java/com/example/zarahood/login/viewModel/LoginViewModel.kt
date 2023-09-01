@@ -29,6 +29,10 @@ class LoginViewModel(
         }
     }
 
+    fun forgotPasswordClicked(){
+        repo.forgotPasswordClicked()
+    }
+
     override fun onCleared() {
         super.onCleared()
         LoginDependencyHolder.destroyLoginComponent()
