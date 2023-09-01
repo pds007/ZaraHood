@@ -17,6 +17,18 @@ enum class LoginNavigation {
                 )
             )
         }
+    },
+
+    /*
+    Different state of Login UI when user clicks on forgot password,
+    represents same login screen but with minor changes like
+    itself can be made invisible/can have its own flow.
+     */
+
+    DEFAULT {
+        override fun launch(context: Context) {
+        }
     };
+
     abstract fun launch(context: Context)
 }

@@ -21,8 +21,15 @@
     <string name="item_click_toast_msg">Thank you for joining our reward program</string>
     <string name="profile_title">Profile</string>
     <string name="forgot_pass">Forgot password?</string>
-    <string name="pass_empty">username or password cannot be empty</string>
+    <string name="pass_empty">password cannot be empty</string>
+    <string name="forgot_pass_click">Forgot password clicked</string>
+    <string name="pass_length_error">the password must have minimum length of 5, but length is %1d char</string>
+    <string name="name_error_text">username format incorrect,should have @</string>
+    <string name="name_error_empty_text">username cannot be empty</string>
     <string name="login_failed_msg">Login Failed Please Retry</string>
     <string name="login_tv_title">Login</string>
     <string name="retry">Retry</string>
+    <string name="viewpager_adapter_not_found_error_text">viewPager adapter not set, adapter is giving null value</string>
+    <string name="only_2_tabs_ui_constraint_violated">only 2 tabs: Ui constraints violated</string>
+    <string name="failed_to_verify">failed to verify</string>
 </resources>
